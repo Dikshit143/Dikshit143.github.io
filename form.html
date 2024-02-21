@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="table.html" method="get">
+        <div>
+            <label for="abc">Name</label>
+            <input type="text" name="Username" id="abc"required minlength="5" maxlength="15" autocomplete="off" pattter="[A-Za-z]{3}">
+        <!-- pattern=[A-Za-z]+ -->
+        <!-- patter=[A-Za-z]^ except alphabets-->
+        </div>
+
+        <div>
+            <label for="bcd">Password</label>
+            <input type="password" name="Password" id="bcd"required minlength="5" maxlength="15">
+        </div>
+
+        <div>
+            <!-- <label for="email">Email-id</label> -->
+            <input type="email" id="email" placeholder="Enter the email-id">
+        </div>
+
+        <div>
+            <label for="number">Door No</label>
+            <input type="number" max="50" step="5" id="number">
+        </div>
+
+        <div>
+            <label for="tel">Mobile Number</label>
+            <input type="tel" id="tel" pattern="[6-9][0-9]{9}">
+        </div>
+
+        <div>
+            <input type="radio" id="r1" name="gender" value="Male">
+            <label for="r1">Male</label>
+            
+            <input type="radio" id="r2" name="gender" value="Female">
+            <label for="r2">Female</label>
+            
+            <input type="radio" id="r3" name="gender" value="Others">
+            <label for="r3">Others</label>
+        </div>
+
+        <div>
+            <label></label>
+            <input type="date" name="date">
+        </div>
+
+        <div>
+            <lable for="dropdown">Select any one:</lable>
+            <select id="dropdown" name="subject" multiple>
+                <option value="HTML">HTML</option>
+                <option value="CSS">CSS</option>
+                <option value="JS">JS</option>
+            </select>
+        </div>
+
+        <div>
+            <label>type:</label>
+            <textarea cols="20" rows="10" placeholder="type here"></textarea>
+        </div>
+
+        <div>
+            <input type="range">
+        </div>
+
+        <div>
+            <button type="submit">Submit</button>
+            <button type="reset">Reset</button>
+        </div>
+    </form>
+</body>
+</html>
